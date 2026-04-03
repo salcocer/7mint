@@ -1,12 +1,12 @@
 # 7mint
 
-A modern web application template built with **Next.js 15**, **shadcn/ui**, **TypeScript**, and **TailwindCSS v4**.
+A modern web application template built with **Next.js 16**, **shadcn/ui**, **TypeScript**, and **TailwindCSS v4**.
 
 ## Tech Stack
 
 | Technology | Version | Purpose |
 |---|---|---|
-| [Next.js](https://nextjs.org) | 15 (App Router) | Framework |
+| [Next.js](https://nextjs.org) | 16 (App Router) | Framework |
 | [TypeScript](https://www.typescriptlang.org) | 5 | Type safety |
 | [TailwindCSS](https://tailwindcss.com) | 4 | Styling |
 | [PostCSS](https://postcss.org) | - | CSS processing |

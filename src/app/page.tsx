@@ -13,7 +13,7 @@ import { Zap, Palette, Code2, ArrowRight } from "lucide-react";
 const features = [
   {
     icon: Zap,
-    title: "Next.js 15 App Router",
+    title: "Next.js 16 App Router",
     description:
       "Built on the latest Next.js with the App Router for file-based routing, server components, and streaming.",
     badge: "Framework",
@@ -66,7 +66,7 @@ export default function Home() {
             Your next project starts here
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            A production-ready template with Next.js 15, shadcn/ui, TypeScript,
+            A production-ready template with Next.js 16, shadcn/ui, TypeScript,
             and TailwindCSS v4. Everything you need to build modern web apps.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
