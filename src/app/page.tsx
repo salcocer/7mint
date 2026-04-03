@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -8,7 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Zap, Palette, Code2, ArrowRight } from "lucide-react";
+import { Zap, Palette, Code2, ArrowRight, CreditCard } from "lucide-react";
 
 const features = [
   {
@@ -32,6 +33,13 @@ const features = [
       "Full TypeScript support with TailwindCSS v4 and PostCSS for a modern, type-safe development experience.",
     badge: "DX",
   },
+  {
+    icon: CreditCard,
+    title: "Stripe Payments",
+    description:
+      "Accept one-time payments and recurring subscriptions out of the box with Stripe Checkout and the Customer Portal.",
+    badge: "Payments",
+  },
 ];
 
 export default function Home() {
@@ -51,6 +59,11 @@ export default function Home() {
             <Button variant="ghost" size="sm">
               GitHub
             </Button>
+            <Link href="/pricing">
+              <Button variant="ghost" size="sm">
+                Pricing
+              </Button>
+            </Link>
             <Button size="sm">Get Started</Button>
           </nav>
         </div>
@@ -80,7 +93,7 @@ export default function Home() {
         </section>
 
         {/* Feature Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {features.map((feature) => (
             <Card key={feature.title} className="flex flex-col">
               <CardHeader>
@@ -119,7 +132,9 @@ export default function Home() {
             </CardContent>
             <CardFooter className="justify-center gap-3">
               <Button>Deploy to Vercel</Button>
-              <Button variant="outline">Read the Docs</Button>
+              <Link href="/pricing">
+                <Button variant="outline">View Pricing</Button>
+              </Link>
             </CardFooter>
           </Card>
         </section>
