@@ -72,12 +72,12 @@ export default function Home() {
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Hero */}
         <section className="text-center mb-20">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
+            A production-ready template{" "}
+          </h1>
           <Badge className="mb-4" variant="outline">
             Next.js + shadcn/ui + TypeScript + TailwindCSS
           </Badge>
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-            Your next project starts here
-          </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
             A production-ready template with Next.js 16, shadcn/ui, TypeScript,
             and TailwindCSS v4. Everything you need to build modern web apps.
@@ -90,28 +90,6 @@ export default function Home() {
               View on GitHub
             </Button>
           </div>
-        </section>
-
-        {/* Feature Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-          {features.map((feature) => (
-            <Card key={feature.title} className="flex flex-col">
-              <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <feature.icon className="h-8 w-8 text-primary" />
-                  <Badge variant="secondary">{feature.badge}</Badge>
-                </div>
-                <CardTitle>{feature.title}</CardTitle>
-                <CardDescription>{feature.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-1" />
-              <CardFooter>
-                <Button variant="ghost" size="sm" className="gap-1 px-0">
-                  Learn more <ArrowRight className="h-3 w-3" />
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
         </section>
 
         {/* CTA */}
